@@ -12,7 +12,10 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+         <!-- Scripts -->
+        <link rel="preload" as="style" href="https://projeto-simples-production.up.railway.app/build/assets/app-CNK6YYrS.css" /><link rel="modulepreload" href="https://projeto-simples-production.up.railway.app/build/assets/app-CvSG40sc.js" /><link rel="stylesheet" href="https://projeto-simples-production.up.railway.app/build/assets/app-CNK6YYrS.css" /><script type="module" src="https://projeto-simples-production.up.railway.app/build/assets/app-CvSG40sc.js"></script>    </head>
+    
     </head>
     <body class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
