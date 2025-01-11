@@ -12,19 +12,12 @@ export default defineConfig(({ mode }) => ({
         }),
     ],
     build: {
-        rollupOptions: {
-            output: {
-                assetFileNames: 'assets/[name]-[hash][extname]',
-                entryFileNames: 'assets/[name]-[hash].js',
-                chunkFileNames: 'assets/[name]-[hash].js',
-            },
-        },
         base: mode === 'production'
-            ? 'https://projeto-simples-production.up.railway.app/build/' // Produção
-            : '/', // Desenvolvimento local
+            ? 'https://projeto-simples-production.up.railway.app/build/'
+            : '/',
     },
     server: {
-        https: false, // HTTPS desativado no local
+        https: true,
         host: '0.0.0.0',
         port: 8080,
     },
