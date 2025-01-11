@@ -9,12 +9,12 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
+            valetTls: true, // Forçar HTTPS nos assets
         }),
     ],
     server: {
-        https: true, // Forçar HTTPS no ambiente de desenvolvimento
-        host: '0.0.0.0', // Garantir que o host seja acessível
-        port: 8080, // Você pode ajustar para a porta usada no Railway
+        https: true,
+        host: '0.0.0.0',
+        port: 8080,
     },
 });
-
